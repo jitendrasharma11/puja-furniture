@@ -9,7 +9,7 @@ export default function Header() {
       <div className='border-b border-[#ccc] bor max-w-[100%] py-2'>
         <div className='max-w-[1320px] m-auto flex justify-between '>
           <p className='text-[13px]'>Contact us 24/7 : +91-8092036180 / furniture@gmail.com</p>
-          <Link href="/cart" className="text-[13px] hover:text-[#C09578] cursor-pointer">
+          <Link href="/login" className="text-[13px] hover:text-[#C09578] cursor-pointer">
             Login / Register
           </Link>
         </div>
@@ -19,7 +19,6 @@ export default function Header() {
         <div className='flex items-center justify-between  max-w-[1320px] m-auto '>
           <Link href={"/"} className="flex items-center space-x-2">
             <img src="/images/cccfbdab-3bec-439f-88b9-5694698cd302-1670132652.png" alt="Home Icon" className="h-8" />
-            Home
           </Link>
           {/* Logo & Search Icon*/}
           <div className="flex items-center space-x-5">
@@ -71,7 +70,7 @@ export default function Header() {
               <FaChevronDown className="text-xs mt-[1px]" />
             </li>
 
-            <li className="text-gray-800 hover:text-[#C09578] cursor-pointer">Contact Us</li>
+            <Link href={"/contact"} className="text-gray-800 hover:text-[#C09578] cursor-pointer">Contact Us</Link>
           </ul>
         </div>
       </nav>

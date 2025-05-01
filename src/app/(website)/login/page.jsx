@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaLock } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 
-export default function Cart() {
+export default function Login() {
   return (
     <section className="py-10">
       <h3 className="text-center text-[35px] font-bold text-[#333]">My Account</h3>
@@ -17,7 +17,7 @@ export default function Cart() {
           </span>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[1320px] lg:m-auto gap-10 lg:gap-20 mt-10 md:mx-2 sm:mx-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[1320px] lg:m-auto gap-10 lg:gap-20 py-4 px-3 md:mx-2 sm:mx-2">
         {/* Login Section */}
         <div className="w-full ">
           <h2 className="text-2xl font-semibold mb-6 text-[#333]">Login</h2>

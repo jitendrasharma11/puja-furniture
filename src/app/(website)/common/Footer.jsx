@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube, FaTelegram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-gray-700 mt-12 border-t border-[#ccc]">
+    <footer className="bg-white text-gray-700 mt-12 border-t border-[#ccc] py-3">
       <div className="max-w-7xl mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Contact Us */}
         <div>
@@ -23,9 +24,15 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Information</h3>
           <ul className="space-y-2">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Frequently Questions</a></li>
+            <li>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact Us</Link>
+            </li>
+            <li>
+              <Link href="/frequently-questions">Frequently Questions</Link>
+            </li>
           </ul>
         </div>
 
@@ -34,8 +41,12 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4">My Account</h3>
           <ul className="space-y-2">
             <li><a href="#">My Dashboard</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Cart</a></li>
+            <li>
+              <Link href="/wishlist">Wishlist</Link>
+            </li>
+            <li>
+              <Link href="/cart">Cart</Link>
+            </li>
             <li><a href="#">Checkout</a></li>
           </ul>
         </div>
@@ -80,13 +91,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="">
-      <div className="flex justify-center space-x-2 mt-2  max-w-[1320px] m-auto mb-5 ">
+        <div className="flex justify-center space-x-2 mt-2  max-w-[1320px] m-auto mb-5 ">
           <p>All Rights Reserved By Furniture | © 2025</p>
-      </div>
-      <div className="flex justify-center space-x-4">
+        </div>
+        <div className="flex justify-center space-x-4">
           <img src="images/papyel2.png" alt="skrill" className="h-6" />
+        </div>
       </div>
-      </div>
-    </footer>
+    </footer >
   );
 }
