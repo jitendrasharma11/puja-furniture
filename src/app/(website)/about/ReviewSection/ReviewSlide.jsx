@@ -17,7 +17,7 @@ export default function ReviewSlide() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 5,
                     slidesToScroll: 3,
                     infinite: true,
                     dots: true
@@ -42,10 +42,10 @@ export default function ReviewSlide() {
     };
     return (
         <section className='pt-7'>
+            <h2 className="text-2xl font-bold mb-6 text-center">What Our Customers Say ?</h2>
             <Slider {...Settings}>
                 <div>
                 <div className="max-w-[1320px] mx-auto px-4 py-10 text-center">
-                    <h2 className="text-2xl font-bold mb-6">What Our Customers Say ?</h2>
                     <p className="text-gray-600 max-w-3xl mx-auto mb-12">
                         These guys have been absolutely outstanding. Perfect Themes and the best of all that you have many options to choose! Best Support team ever! Very fast responding! Thank you very much! I highly recommend this theme and these people!
                     </p>
@@ -71,7 +71,6 @@ export default function ReviewSlide() {
                 </div>
                 <div>
                 <div className="max-w-[1320px] mx-auto px-4 py-10 text-center">
-                    <h2 className="text-2xl font-bold mb-6">What Our Customers Say ?</h2>
                     <p className="text-gray-600 max-w-3xl mx-auto mb-12">
                         These guys have been absolutely outstanding. Perfect Themes and the best of all that you have many options to choose! Best Support team ever! Very fast responding! Thank you very much! I highly recommend this theme and these people!
                     </p>
@@ -97,7 +96,6 @@ export default function ReviewSlide() {
                 </div>
                 <div>
                 <div className="max-w-[1320px] mx-auto px-4 py-10 text-center">
-                    <h2 className="text-2xl font-bold mb-6">What Our Customers Say ?</h2>
                     <p className="text-gray-600 max-w-3xl mx-auto mb-12">
                         These guys have been absolutely outstanding. Perfect Themes and the best of all that you have many options to choose! Best Support team ever! Very fast responding! Thank you very much! I highly recommend this theme and these people!
                     </p>
