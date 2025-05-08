@@ -40,14 +40,14 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">My Account</h3>
           <ul className="space-y-2">
-            <li><a href="#">My Dashboard</a></li>
+            <li><Link href="/dashboard">My Dashboard</Link></li>
             <li>
               <Link href="/wishlist">Wishlist</Link>
             </li>
             <li>
               <Link href="/cart">Cart</Link>
             </li>
-            <li><a href="#">Checkout</a></li>
+            <li><a href="/checkout">Checkout</a></li>
           </ul>
         </div>
 
