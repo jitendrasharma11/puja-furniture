@@ -1,11 +1,24 @@
 import React from 'react'
 import { FaHeart } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function ProductListing() {
 
 
     return (
         <div>
+            <h3 className="text-center text-[35px] font-bold text-[#333] mt-3 pt-3">Product Details</h3>
+            <div className="border-b border-[#ccc] max-w-[1320px] m-auto pb-6">
+                <div className="justify-center flex items-center mb-6">
+                    <a href="/" className="hover:text-[#C09578] cursor-pointer text-[12px] text-[#555]">
+                        Home
+                    </a>
+                    <span className="flex items-center text-[12px] text-[#555]">
+                        <IoIosArrowForward className="mx-1 text-[#C09578]" />
+                        Product Details
+                    </span>
+                </div>
+            </div>
             <div className="flex min-h-screen max-w-[1320px] m-auto bg-white font-sans">
                 {/* Sidebar */}
                 <aside className="w-75 p-4 border-r border-gray-300">
@@ -92,14 +105,16 @@ export default function ProductListing() {
                 </aside>
 
                 {/* Main Content */}
+
                 <main className="flex-1 p-6">
+                    
                     <div className="flex justify-between items-center mb-4 text-sm">
                         <div>Sort by:</div>
                         <div>Showing 1–1 of 1 results</div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="border rounded shadow ">
+                        <div className=" rounded shadow ">
                             <img src="/images/1617981904164Hrithvik%20Stool__.jpg" alt="Hrithik Stool" className="w-full h-48 object-cover mb-2" />
                             <div className='p-4 text-center'>
                                 <p className="text-xs text-gray-600">Side and End Tables</p>

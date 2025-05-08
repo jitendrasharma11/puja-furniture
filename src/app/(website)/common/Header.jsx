@@ -80,7 +80,7 @@ export default function Header() {
                   <div>
                     <h4 className="text-[13px] font-bold mb-2">TABLES</h4>
                     <ul className="space-y-1 text-[13px] text-gray-600">
-                      <li>Side And End Tables</li>
+                      <li><Link href='/product-listing'>Side And End Tables</Link></li>
                       <li>Nest Of Tables</li>
                       <li>Console Table</li>
                       <li>Coffee Table Sets</li>
